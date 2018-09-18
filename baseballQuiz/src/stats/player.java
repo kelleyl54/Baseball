@@ -61,7 +61,7 @@ public class player {
 		
 		double ba = hits / atBats;
 		
-		System.out.println("This athlete's batting average is " + ba);
+		System.out.println("This athlete's batting average is " + String.format("%.3g%n",ba));
 		
 	}
 	
@@ -69,7 +69,7 @@ public class player {
 		
 		double obp = (hits + walks) / (walks + atBats);
 		
-		System.out.println("This athlete's on base percentage is " + obp);;
+		System.out.println("This athlete's on base percentage is " + String.format("%.3g%n",obp));;
 		
 	}
 	
@@ -77,7 +77,7 @@ public class player {
 		
 		double slg = (hits + doubles + 2 * triples + 3 * homeRuns) / atBats;
 		
-		System.out.println("This athlete's slugging percentage is " + slg);
+		System.out.println("This athlete's slugging percentage is " + String.format("%.3g%n",slg));
 		
 	}
 	
@@ -85,7 +85,7 @@ public class player {
 		
 		double obs = (hits + doubles + 2 * triples + 3 * homeRuns) / atBats + (hits + walks) / (walks + atBats);
 		
-		System.out.println("This athlete's on base plus slugging percentage is " + obs);
+		System.out.println("This athlete's on base plus slugging percentage is " + String.format("%.4g%n",obs));
 				
 	}
 	
@@ -95,7 +95,7 @@ public class player {
 		
 		double tb = singles + 2 * doubles + 3 * triples + 4 * homeRuns;
 		
-		System.out.println("This athlete's total bases are " + tb);
+		System.out.println("This athlete's total bases are " + (int)tb);
 		
 	}
 	
